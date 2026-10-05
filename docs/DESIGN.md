@@ -28,7 +28,7 @@ flowchart TD
 ```
 
 Data flows one way: pseudo-files → parsers → value structs → presentation. The kernel side
-is where drivers and subsystems publish hardware state; ProcPulse is a pure consumer,
+is where drivers and subsystems publish hardware state; ProcScope is a pure consumer,
 which is what makes the project safe and portable.
 
 ## Component responsibilities

@@ -1,11 +1,11 @@
 # Stage 1 — Project Introduction
 
-**Project:** ProcPulse — A C++ Linux System Monitor & Device Explorer
+**Project:** ProcScope — A C++ Linux System Monitor & Device Explorer
 **Type:** Individual capstone, 20-day Linux / C++ training (Module-9)
 
 ## Idea
 
-ProcPulse is a menu-driven command-line tool written in C++17 that reports live system
+ProcScope is a menu-driven command-line tool written in C++17 that reports live system
 health: CPU usage and load averages, memory utilisation, running processes, and the
 devices the kernel currently knows about. It obtains every number from Linux's own
 information interfaces — `/proc`, `/sys` and `/dev` — the same interfaces that tools like
@@ -21,7 +21,7 @@ see them interact. There is no small, safe project that answers, concretely:
 - How does a C++ program turn raw pseudo-files like `/proc/stat` into trustworthy numbers?
 - How are threads, signals and file I/O combined in a real, testable program?
 
-ProcPulse solves exactly this: one small program in which every training topic has a
+ProcScope solves exactly this: one small program in which every training topic has a
 visible, explainable role.
 
 ## Scope

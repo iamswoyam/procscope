@@ -2,7 +2,7 @@
 
 ## Slides (8)
 
-1. **Title** — ProcPulse: a C++ Linux system monitor & device explorer; one-line pitch.
+1. **Title** — ProcScope: a C++ Linux system monitor & device explorer; one-line pitch.
 2. **Problem & scope** — why procfs/sysfs; in/out of scope (from `PROJECT_INTRO.md`).
 3. **Requirements** — FR/NFR highlights (from `PRD.md`).
 4. **Architecture** — the block diagram; "data flows one way: pseudo-files → parsers →
@@ -33,7 +33,7 @@
 - **What happens on Ctrl-C?** SIGINT sets a flag; the sampler's condition-variable wait
   wakes, the thread joins, exit code 0.
 - **How is this related to device drivers?** `/sys/class/*` and `/dev` are exactly where
-  drivers publish devices; ProcPulse consumes that contract. Writing the producer
+  drivers publish devices; ProcScope consumes that contract. Writing the producer
   (a character driver) is the planned future work.
 - **Why fixtures instead of only live tests?** Determinism and portability: parsers are
   proven against known inputs, independent of machine load.

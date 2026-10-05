@@ -2,7 +2,7 @@
 
 ## What was built
 
-ProcPulse v1.0: a C++17 Linux system monitor and device explorer. One binary with three
+ProcScope v1.0: a C++17 Linux system monitor and device explorer. One binary with three
 modes — interactive menu, `--once` snapshot, `--live <secs>` threaded sampling — reading
 exclusively from `/proc`, `/sys` and `/dev`.
 

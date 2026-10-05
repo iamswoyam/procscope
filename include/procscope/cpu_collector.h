@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace procpulse {
+namespace procscope {
 
 struct CpuSample {
     unsigned long long user = 0;
@@ -38,4 +38,4 @@ private:
     std::string root_;
 };
 
-}  // namespace procpulse
+}  // namespace procscope

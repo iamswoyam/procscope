@@ -1,8 +1,8 @@
-#include "procpulse/dev_collector.h"
+#include "procscope/dev_collector.h"
 
-#include "procpulse/fs_util.h"
+#include "procscope/fs_util.h"
 
-namespace procpulse {
+namespace procscope {
 
 DevCollector::DevCollector(std::string root) : root_(std::move(root)) {}
 
@@ -21,4 +21,4 @@ long DevCollector::count_dev_nodes() const {
     return static_cast<long>(list_entries(root_ + "/dev").size());
 }
 
-}  // namespace procpulse
+}  // namespace procscope

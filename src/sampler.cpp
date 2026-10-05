@@ -1,9 +1,9 @@
-#include "procpulse/sampler.h"
+#include "procscope/sampler.h"
 
 #include <chrono>
 #include <stdexcept>
 
-namespace procpulse {
+namespace procscope {
 
 Sampler::Sampler(std::string root, double interval_seconds)
     : root_(std::move(root)), interval_(interval_seconds) {}
@@ -67,4 +67,4 @@ void Sampler::loop() {
     }
 }
 
-}  // namespace procpulse
+}  // namespace procscope

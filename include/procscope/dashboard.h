@@ -4,12 +4,12 @@
 #include <ostream>
 #include <string>
 
-#include "procpulse/cpu_collector.h"
-#include "procpulse/dev_collector.h"
-#include "procpulse/mem_collector.h"
-#include "procpulse/proc_collector.h"
+#include "procscope/cpu_collector.h"
+#include "procscope/dev_collector.h"
+#include "procscope/mem_collector.h"
+#include "procscope/proc_collector.h"
 
-namespace procpulse {
+namespace procscope {
 
 // Menu-driven console view over the collectors.
 class Dashboard {
@@ -33,4 +33,4 @@ private:
     const std::atomic<bool>& stop_flag_;
 };
 
-}  // namespace procpulse
+}  // namespace procscope

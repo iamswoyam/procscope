@@ -83,7 +83,7 @@ sequenceDiagram
     participant S as Sampler thread
     participant C as Collectors
     participant P as /proc, /sys
-    U->>M: procpulse --live 10
+    U->>M: procscope --live 10
     M->>S: start()
     loop every interval
         S->>C: sample()/list()

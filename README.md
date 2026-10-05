@@ -53,7 +53,7 @@ handling.
 Interactive menu:
 
 ```text
-== ProcPulse ==
+== ProcScope ==
  1) CPU & load
  2) Memory
  3) Processes
@@ -63,7 +63,7 @@ Interactive menu:
 choice:
 ```
 
-One-shot snapshot (`./build/procpulse --root tests/fixtures --once`, reproducible):
+One-shot snapshot (`./build/procscope --root tests/fixtures --once`, reproducible):
 
 ```text
 -- CPU & load --
@@ -83,7 +83,7 @@ One-shot snapshot (`./build/procpulse --root tests/fixtures --once`, reproducibl
   device nodes in /dev: 2
 ```
 
-Live mode on a real system (`./build/procpulse --live 6 --interval 2`, then Ctrl-C):
+Live mode on a real system (`./build/procscope --live 6 --interval 2`, then Ctrl-C):
 
 ```text
 [seq 1] cpu=0.0%  mem=9.3%  procs=84  devs=253
@@ -96,19 +96,19 @@ sampler stopped cleanly
 
 | Command | Effect |
 |---|---|
-| `make` | build `build/procpulse` |
+| `make` | build `build/procscope` |
 | `make test` | unit tests (fixtures) + integration script |
-| `./build/procpulse` | interactive menu on the live system |
-| `./build/procpulse --once` | single snapshot of the live system |
-| `./build/procpulse --live 10` | sampler thread prints every 2 s for 10 s |
-| `./build/procpulse --root tests/fixtures --once` | snapshot from fixtures (deterministic) |
-| `./build/procpulse --interval 0.5 --live 5` | custom sampling interval |
+| `./build/procscope` | interactive menu on the live system |
+| `./build/procscope --once` | single snapshot of the live system |
+| `./build/procscope --live 10` | sampler thread prints every 2 s for 10 s |
+| `./build/procscope --root tests/fixtures --once` | snapshot from fixtures (deterministic) |
+| `./build/procscope --interval 0.5 --live 5` | custom sampling interval |
 
 ## Repository layout
 
 ```
-procpulse/
-├── include/procpulse/   # public headers (one class per collector)
+procscope/
+├── include/procscope/   # public headers (one class per collector)
 ├── src/                 # implementations + main
 ├── tests/               # fixture-based unit tests + integration script
 │   └── fixtures/        # saved /proc, /sys and /dev samples
@@ -142,9 +142,9 @@ procpulse/
 Requires: Linux (or WSL), `g++` with C++17 support, `make`. No root privileges needed.
 
 ```bash
-make                 # builds build/procpulse
+make                 # builds build/procscope
 make test            # builds and runs unit tests against tests/fixtures
-./build/procpulse    # interactive menu (real system)
+./build/procscope    # interactive menu (real system)
 ```
 
 ## License

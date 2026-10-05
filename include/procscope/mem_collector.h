@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace procpulse {
+namespace procscope {
 
 struct MemSample {
     long long total_kb = -1;
@@ -28,4 +28,4 @@ private:
     std::string root_;
 };
 
-}  // namespace procpulse
+}  // namespace procscope

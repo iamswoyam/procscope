@@ -44,7 +44,7 @@ visible, explainable role.
 
 ## Expected outcome
 
-A single binary, `procpulse`, that on any Linux machine (or WSL) prints a correct live
+A single binary, `procscope`, that on any Linux machine (or WSL) prints a correct live
 snapshot of CPU, memory, processes and devices without privileges, shuts down cleanly on
 `Ctrl-C`, and passes its test suite against saved fixtures.
 

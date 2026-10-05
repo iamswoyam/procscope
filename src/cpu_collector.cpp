@@ -1,10 +1,10 @@
-#include "procpulse/cpu_collector.h"
+#include "procscope/cpu_collector.h"
 
 #include <sstream>
 
-#include "procpulse/fs_util.h"
+#include "procscope/fs_util.h"
 
-namespace procpulse {
+namespace procscope {
 
 CpuSample parse_stat_content(const std::string& content) {
     CpuSample s;
@@ -44,4 +44,4 @@ CpuSample CpuCollector::sample() const {
     return s;
 }
 
-}  // namespace procpulse
+}  // namespace procscope

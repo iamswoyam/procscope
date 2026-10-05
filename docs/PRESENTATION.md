@@ -17,8 +17,8 @@
 ## Demo script (3 minutes)
 
 1. `make && make test` — show both PASSED lines.
-2. `./build/procpulse --once` — walk through each section of the snapshot.
-3. `./build/procpulse --live 6 --interval 2` — show three sampler lines; `Ctrl-C`;
+2. `./build/procscope --once` — walk through each section of the snapshot.
+3. `./build/procscope --live 6 --interval 2` — show three sampler lines; `Ctrl-C`;
    show "sampler stopped cleanly".
 4. `git log --oneline --decorate | head` — show the staged history and tags.
 
